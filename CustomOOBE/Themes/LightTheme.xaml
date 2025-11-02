@@ -1,0 +1,19 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Colores Tema Claro -->
+    <Color x:Key="LightPrimaryBackground">#FFFFFF</Color>
+    <Color x:Key="LightSecondaryBackground">#F5F5F5</Color>
+    <Color x:Key="LightAccent">#0078D4</Color>
+    <Color x:Key="LightTextPrimary">#000000</Color>
+    <Color x:Key="LightTextSecondary">#666666</Color>
+    <Color x:Key="LightBorder">#E0E0E0</Color>
+
+    <SolidColorBrush x:Key="LightPrimaryBackgroundBrush" Color="{StaticResource LightPrimaryBackground}"/>
+    <SolidColorBrush x:Key="LightSecondaryBackgroundBrush" Color="{StaticResource LightSecondaryBackground}"/>
+    <SolidColorBrush x:Key="LightAccentBrush" Color="{StaticResource LightAccent}"/>
+    <SolidColorBrush x:Key="LightTextPrimaryBrush" Color="{StaticResource LightTextPrimary}"/>
+    <SolidColorBrush x:Key="LightTextSecondaryBrush" Color="{StaticResource LightTextSecondary}"/>
+    <SolidColorBrush x:Key="LightBorderBrush" Color="{StaticResource LightBorder}"/>
+
+</ResourceDictionary>

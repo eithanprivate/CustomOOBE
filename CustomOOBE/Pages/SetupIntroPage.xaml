@@ -1,0 +1,23 @@
+<UserControl x:Class="CustomOOBE.Pages.SetupIntroPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{DynamicResource PrimaryBackgroundBrush}">
+    <Grid>
+        <TextBlock x:Name="SetupText"
+                   FontSize="64"
+                   FontWeight="Light"
+                   Foreground="{DynamicResource TextPrimaryBrush}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap"
+                   MaxWidth="800"
+                   Opacity="0">
+            <Run Text="Pero primero, necesitas"/><LineBreak/>
+            <Run Text="configurar unas cosas"/>
+            <TextBlock.RenderTransform>
+                <TranslateTransform Y="30"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</UserControl>
