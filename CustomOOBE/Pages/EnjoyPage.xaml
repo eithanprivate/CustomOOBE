@@ -1,0 +1,35 @@
+<UserControl x:Class="CustomOOBE.Pages.EnjoyPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{DynamicResource PrimaryBackgroundBrush}">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="EnjoyText"
+                       Text="Disfruta de tu"
+                       FontSize="64"
+                       FontWeight="Light"
+                       Foreground="{DynamicResource TextPrimaryBrush}"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       Opacity="0">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform Y="30"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+            <TextBlock x:Name="DeviceNameText"
+                       Text="[Nombre del Equipo]"
+                       FontSize="72"
+                       FontWeight="Bold"
+                       Foreground="{DynamicResource AccentBrush}"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       Margin="0,20,0,0"
+                       Opacity="0">
+                <TextBlock.RenderTransform>
+                    <TranslateTransform Y="30"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

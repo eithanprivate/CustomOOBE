@@ -1,0 +1,31 @@
+<Window x:Class="CustomOOBE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuración del Sistema"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="{DynamicResource PrimaryBackgroundBrush}"
+        KeyDown="Window_KeyDown"
+        Topmost="True">
+
+    <Grid>
+        <!-- Panel lateral con animación (estilo macOS) -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Panel de animación lateral -->
+        <Border Grid.Column="0" Background="{DynamicResource SecondaryBackgroundBrush}">
+            <Canvas x:Name="AnimationCanvas" ClipToBounds="True">
+                <!-- Aquí se renderizarán las animaciones -->
+            </Canvas>
+        </Border>
+
+        <!-- Panel de contenido -->
+        <Grid Grid.Column="1" x:Name="ContentPanel">
+            <ContentControl x:Name="ContentArea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+    </Grid>
+</Window>
